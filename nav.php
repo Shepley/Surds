@@ -38,7 +38,9 @@ $_SESSION['loggedIn'] = 0;
           </ul>
         </li>";
       } elseif($_SESSION['loggedIn'] == 0) {
-        echo "<li><a href='/login'>Login</a></li>";
+        echo "<li";
+        include 'loginpagecheck.php';
+        echo "><a href='/login'>Login</a></li>";
       }
        ?>
       </ul>
