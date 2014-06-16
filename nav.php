@@ -22,10 +22,13 @@
             }?>><a href="/leaderboards">Leaderboards</a></li>
       </ul>
 
+<?php $_SESSION['name'] = "test"; 
+$_SESSION['loggedIn'] = 0;
+?>
 
       <ul class="nav navbar-nav navbar-right">
-      <?php if($_SESSION['loggedIn' == 1]){
-     	  echo "<p class='navbar-text'>Signed in as <?php echo $_SESSION['name']; ?></p>
+      <?php if($_SESSION['loggedIn'] == 1){
+     	  echo "<p class='navbar-text'>Signed in as ".$_SESSION['name']."</p>
      	  <li class='dropdown'>
           <a href='#' class='dropdown-toggle' data-toggle='dropdown'> <span class='glyphicon glyphicon-user'></span> Account <b class='caret'></b></a>
           <ul class='dropdown-menu'>
@@ -34,8 +37,8 @@
             <li><a href='#'><span class='glyphicon glyphicon-log-out'></span> Sign out</a></li>
           </ul>
         </li>";
-      } elseif($_SESSION['loggedIn' == 0]) {
-        echo "<li><span class='glyphicon glyphicon-log-in'></span><a href='/login'>Login</a></li>";
+      } elseif($_SESSION['loggedIn'] == 0) {
+        echo "<li><a href='/login'>Login</a></li>";
       }
        ?>
       </ul>
