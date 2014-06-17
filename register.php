@@ -1,10 +1,9 @@
 <?php include 'overall.php'; ?>
-
 <div class="container">
 	<div class="row">
 		<div class="align-center">
 			<div class="well">
-        <form class="form-horizontal" role="form">
+        <form class="form-horizontal" role="form" action="passwordcheck.php">
         <h4>Register an account</h4><br>
             <div class="form-group">
               <label for="inputUsername" class="col-sm-2 control-label">Username</label>
@@ -15,31 +14,31 @@
             <div class="form-group">
               <label for="inputPassword" class="col-sm-2 control-label">Password</label>
               <div class="col-sm-10">
-                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                  <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off">
               </div>
             </div>
             <div class="form-group">
               <label for="repeatPassword" class="col-sm-2 control-label">Confirm your password</label>
               <div class="col-sm-10">
-                  <input type="password" class="form-control" id="Passwordrepeat" placeholder="Repeat your password">
+                  <input type="password" class="form-control" id="confirm_password" placeholder="Repeat your password" autocomplete="off">
               </div>
             </div>
             <div class="form-group">
              <label for="inputSchoolYear" class="col-sm-2 control-label">Your school year</label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1"> 7
+                <input type="checkbox" id="yr7" value="7"> 7
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1"> 8
+                <input type="checkbox" id="yr8" value="8"> 8
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1"> 9
+                <input type="checkbox" id="yr9" value="9"> 9
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1"> 10
+                <input type="checkbox" id="yr10" value="10"> 10
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1"> 11(+)
+                <input type="checkbox" id="yr11_over" value="11over"> 11(+)
               </label>
             </div>
             <div class="form-group">
