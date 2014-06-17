@@ -1,5 +1,4 @@
 <?php
-	require 'footer.php';
 	require 'nav.php';
 	session_start();
 	$_SESSION['loggedIn'] = 0;
