@@ -14,7 +14,7 @@ while ($row = mysqli_fetch_array($result)){
     if ($username == $row['username'] && $password == $row['password']){
 		$_SESSION['loggedIn'] = 1;
 		$_SESSION['username'] = $row['username']; 
-		header( 'Location: /index');
+		header('Location: ' . $_SERVER['HTTP_REFERER']);
 	} else {
 		echo '<div class="container"><div class="alert alert-warning alert-danger">
   <strong>Error 401!</strong> The username or password you entered was incorrect, please try again.<button onClick="location.href=\'/login\'" class="close">Back to login</button>
