@@ -7,9 +7,9 @@ echo '<div class="container">
 			<h3>Grade C/B</h3><small><strong>Simplify these surds</strong></small><br>
 			<br><div class="row">
 			<div class="col-md-2"><strong>1) &radic; 50</strong></div>
-  			<div class="col-md-4"><input type="text" class="form-control" placeholder="Enter Answer"></div>
+  			<div class="col-md-4"><input type="text" class="form-control" placeholder="Enter Answer" autocomplete="off"></div>
   			<div class="col-md-3"><strong>2) &radic; 108</strong></div>
-  			<div class="col-md-3"><input type="text" class="form-control" placeholder="Enter Answer"></div>
+  			<div class="col-md-3"><input type="text" class="form-control" placeholder="Enter Answer" autocomplete="off"></div>
 		</div>
 	</div>
 </div>';
