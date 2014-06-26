@@ -1,4 +1,10 @@
-<?php include 'overall.php'; ?>
+<?php include 'overall.php';
+
+if($_SESSION['loggedIn']){
+  header( 'Location: /index');
+}
+
+?>
 
 <div class="container">
 	<div class="row">
