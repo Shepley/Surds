@@ -9,19 +9,25 @@
             <div class="form-group">
               <label for="inputUsername" class="col-sm-2 control-label">Username</label>
               <div class="col-sm-10">
-                  <input type="text" class="form-control" name="username" placeholder="Enter your username">
+                  <input type="text" class="form-control" name="username" placeholder="Enter your username" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputDispname" class="col-sm-2 control-label">Display name</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" name="disp_name" placeholder="Enter your displayname; this is the one people see." required>
               </div>
             </div>
             <div class="form-group">
               <label for="password" class="col-sm-2 control-label">Password</label>
               <div class="col-sm-10">
-                  <input type="password" class="form-control" name="password" placeholder="Password" autocomplete="off">
+                  <input type="password" class="form-control" name="password" placeholder="Password" autocomplete="off" required>
               </div>
             </div>
             <div class="form-group">
               <label for="confirm_password" class="col-sm-2 control-label">Confirm your password</label>
               <div class="col-sm-10">
-                  <input type="password" class="form-control" name="confirm_password" placeholder="Repeat your password" autocomplete="off">
+                  <input type="password" class="form-control" name="confirm_password" placeholder="Repeat your password" autocomplete="off" required>
               </div>
             </div>
             <div class="form-group">
