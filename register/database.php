@@ -1,6 +1,6 @@
 <?php
 
-$db = mysqli_connect("localhost","root","root","surds");
+$db = mysqli_connect("localhost","root","","learnsurds");
 
 // Check connection //
 
